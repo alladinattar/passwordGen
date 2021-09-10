@@ -1,0 +1,35 @@
+{% extends "base.html" %} {% block content %}
+
+<div class="container">
+    <div class="row " id="checkboxes">
+        <div class="col-4"></div>
+        <div class="col-5">
+            <form action="/" method="POST">
+                <div class="form-check form-switch">
+                    <input class="form-check-input" name="special" type="checkbox" id="Special symbols" />
+                    <label class="form-check-label" for="Special symbols">Enable special symbols</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" name="digit" type="checkbox" id="digit" />
+                    <label class="form-check-label" for="digit">Enable digits</label>
+                </div>
+                <div class="form-check form-switch">
+                    <input class="form-check-input" type="checkbox" name="uppercase" id="uppercase" />
+                    <label class="form-check-label" for="uppercase">Enable upper case letters</label>
+                </div>
+                <p></p>
+                <div class="form-group w-50">
+                    <label for="len" class="form-label">Password length</label>
+                    <input type="len" class="form-control" id="len" name="len" aria-describedby="emailHelp">
+                    <div id="len" class="form-text">Enter password length</div>
+                </div>
+                <div id="length">
+                </div>
+                <button type="submit" class="btn btn-primary">Generate!!!</button>
+        </div>
+    </div>
+    </form>
+    <div class="col-3"></div>
+</div>
+</div>
+{% endblock %}
